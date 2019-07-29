@@ -1,0 +1,24 @@
+{
+  "name": "BurgerApp",
+  "version": "1.0.0",
+  "description": "Full stack Burger App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katievogel/BurgerApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katievogel/BurgerApp/issues"
+  },
+  "homepage": "https://github.com/katievogel/BurgerApp#readme",
+  "dependencies": {
+    "node": "^12.7.0"
+  }
+}
