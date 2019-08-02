@@ -9,10 +9,14 @@
         <div class="col-lg-6">
             <div class="card" style="width: 400px;">
                 <div class="card-body">
-                    <h5 class="card-title">Burger to Eat</h5>
+                    <h5 class="card-title">Burgers to Eat</h5>
                     <ul class="list-group">
-                        <li class="list-group-item"><span class="burgerEntry"></span><button id="nom-button"
-                                type="submit" class="btn btn-success">Nom Nom Nom</button></li>
+                        {{#each burgers}}
+                        {{#unless devoured}}
+                        <span>{{burger_name}}</span><button id="nom-button" type="submit"
+                            class="btn btn-success">Nom Nom Nom</button>
+                        {{/unless}}
+                        {{/each}}
                     </ul>
                 </div>
             </div>
@@ -22,8 +26,12 @@
                 <div class="card-body">
                     <h5 class="card-title">Burgers Eaten</h5>
                     <ul class="list-group">
-                        <li class="list-group-item"><span class="burgerEntry"></span><button id="clear-button"
-                                type="submit" class="btn btn-danger">Clear Burger</button></li>
+                        {{#each burgers}}
+                        {{#if devoured}}
+                        <span>{{burger_name}}</span>
+                        <button id="clear-burger" type="submit" class="btn btn-danger">Clear Burger</button>
+                        {{/if}}
+                        {{/each}}
                     </ul>
                 </div>
             </div>
