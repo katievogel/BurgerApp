@@ -1,40 +1,56 @@
 <div class="container">
     <div class="jumbotron">
-        <img src="https://i.chzbgr.com/full/875511040/h8EB4D6E9/" alt="I can haz cheezburger">
-        <h1 class="text-center">
-            Nom Nom Burger
-        </h1>
-    </div>
-    <div class="row">
-        <div class="col-lg-6">
-            <div class="card" style="width: 400px;">
-                <div class="card-body">
-                    <h5 class="card-title">Burgers to Eat</h5>
-                    <ul class="list-group">
-                        {{#each burgers}}
-                        {{#unless devoured}}
-                        <span>{{burger_name}}</span><button id="nom-button" type="submit"
-                            class="btn btn-success">Nom Nom Nom</button>
-                        {{/unless}}
-                        {{/each}}
-                    </ul>
-                </div>
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="./assets/imgs/icanhazcheezburger.jpeg" class="card-img" alt="I can haz cheezburger">
             </div>
-        </div>
-        <div class="col-lg-6">
-            <div class="card" style="width: 400px;">
-                <div class="card-body">
-                    <h5 class="card-title">Burgers Eaten</h5>
-                    <ul class="list-group">
-                        {{#each burgers}}
-                        {{#if devoured}}
-                        <span>{{burger_name}}</span>
-                        <button id="clear-burger" type="submit" class="btn btn-danger">Clear Burger</button>
-                        {{/if}}
-                        {{/each}}
-                    </ul>
-                </div>
+            <div class="col-md-8">
+                <h1 class="card-title">Nom Nom Burger</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="burger-entry">What burger would you like to eat?</label>
+                        <input type="input" class="form-control burger-entry"
+                            placeholder="Enter your burger's name here...">
+                    </div>
+                    <button type="button" class="btn btn-primary new-burger">Submit</button>
+                </form>
             </div>
         </div>
     </div>
+</div>
+
+</div>
+<div class="row">
+    <div class="col-lg-6">
+        <div class="card" style="width: 400px;">
+            <div class="card-body">
+                <h5 class="card-title">Burgers to Eat</h5>
+                <ul class="list-group">
+                    {{#each burgers}}
+                    {{#unless devoured}}
+                    <span>{{id}} - {{burger_name}}</span><button value={{this.id}} type="submit"
+                        class="btn btn-success nom-button">Nom Nom Nom</button>
+                    {{/unless}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="card" style="width: 400px;">
+            <div class="card-body">
+                <h5 class="card-title">Burgers Eaten</h5>
+                <ul class="list-group">
+                    {{#each burgers}}
+                    {{#if devoured}}
+                    <span>{{id}} - {{burger_name}}</span>
+                    <button value={{this.id}} type="submit" class="btn btn-danger clear-burger">Clear
+                        Burger</button>
+                    {{/if}}
+                    {{/each}}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 </div>

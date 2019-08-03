@@ -19,11 +19,11 @@ function printQuestionMarks(num) {
         arr.push(key + "=" + value);
       }
     }
-    // translate array of strings to a single comma-separated string
+   
     return arr.toString();
   }
   
-  // Object for all our SQL statement functions.
+
   var orm = {
     selectAll: function(tableInput, cb) {
       var queryString = "SELECT * FROM " + tableInput + ";";

@@ -1,0 +1,36 @@
+body {
+    background-image: url("https://www.highreshdwallpapers.com/wp-content/uploads/2014/03/Delicious-HD-Flaming-Cheeseburger.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Luckiest Guy', cursive, sans-serif;
+}
+
+.jumbotron {
+    background-color:  rgba(255,255,255,0.5);
+    text-align: left;
+}
+
+button {
+    max-width:10em;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 150px;
+    margin-left: 40px;
+}
+
+.col-md-4, .col-md-8, .col-lg-6, .row {
+    margin: auto;
+    max-width: 900px;
+}
+
+.card {
+    background-color: rgba(255,255,255,0.5);
+    padding: 30px;
+    vertical-align: top;
+}
+
+.nom-the-burger {
+    margin-right: 40px;
+}
