@@ -8,6 +8,17 @@ var connection = mysql.createConnection({
   database: "burgers_db"
 });
 
+if (process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+} else {
+  connection = mysql.createConnection({
+    host: 'xq7t6tasopo9xxbs.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    user: 'peki1ic9a3wwvzqq',
+    password: 'dkaxw3rmfayaw898',
+    database: 'gx2t36okkdphtwkh'
+  });
+};
+
 connection.connect(function(err) {
   if (err) {
     console.error("error connecting: " + err.stack);
