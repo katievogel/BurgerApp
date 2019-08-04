@@ -15,7 +15,7 @@ button {
 }
 
 img {
-    vertical-align: middle;
+    float: left;
     max-width: 150px;
     margin-left: 40px;
 }
