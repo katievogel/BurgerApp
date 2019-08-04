@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/katievogel/BurgerApp#readme",
   "dependencies": {
-    "node": "^12.7.0"
+    "node": "^12.6.0"
   }
 }
