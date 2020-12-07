@@ -6,6 +6,7 @@ This app allows you to enter a burger of your choice to be eaten, which populate
 * CSS
 * Bootstrap
 * Javscript
+* Handlebars
 * SQL (MySql), Sequelize
 * Express, NodeJS
 
